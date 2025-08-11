@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - Smart Expense Tracker</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #218838;
+}
+
+</style>
+
+</head>
+<body>
+<div class="form-container">
+    <h2>Register</h2>
+    <form id="registerForm">
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter full name" required>
+        <label>Email</label>
+        <input type="email" id="regEmail" placeholder="Enter email" required>
+        <label>Password</label>
+        <input type="password" id="regPassword" placeholder="Enter password" required>
+        <button type="submit">Register</button>
+        <p>Already have an account? <a href="index.html">Login</a></p>
+    </form>
+</div>
+<script src="auth.js"></script>
+</body>
+</html>
